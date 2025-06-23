@@ -8,6 +8,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    padding-top: 90px;
 }
 
 a {
@@ -22,8 +23,14 @@ img {
 /* Заголовок */
 
 header {
-    padding: 44px 0;
+    position: fixed;
+    padding: 20px 0;
+    background-color: #fff;
     font-size: 16px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo, header .logo t{
@@ -75,7 +82,7 @@ header nav ul li:last-child a:hover{
     margin: 0 auto
 }
 
-.image-section, .rec-image-section {
+.image-section, .rec-image-section, .supervisor--image-section {
     width: 30%;
     height: 100%;
     display: flex;
@@ -89,7 +96,7 @@ header nav ul li:last-child a:hover{
     object-fit: contain;
 }
 
-.content-section, .rec-content-section {
+.content-section, .rec-content-section,.supervisor-content-section {
     width: 70%;
     padding: 20px;
     color: black;
@@ -407,4 +414,40 @@ header nav ul li:last-child a:hover{
     .gallery-item {
         min-width: 100%;
     }
+}
+
+/* Раздел описания руководителя */
+.supervisor-container{
+width: 90%;
+    display: flex;  
+    height: 340px; 
+    border-radius: 44px; 
+    overflow: hidden;
+    margin: 0 auto
+}
+.supervisor-image {
+    border-radius: 16px;
+    width: 250px;
+    object-fit: contain;
+}
+.label {
+    color: rgba(39, 166, 229, 1);
+    font-size: 16px;
+    font-weight: 200;
+    margin-right: 40px;
+}
+.supervisor-content-section h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.supervisor-text-block {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.socials-btn {
+    margin-top: 30px;
+    margin-left: 30px;
 }

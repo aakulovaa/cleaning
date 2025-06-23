@@ -14,9 +14,9 @@
         <span class="logo">Клининговая<br><t>компания</t></span>
         <nav>
             <ul>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Работы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#photo">Работы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
                 <li><a href="#" class="btn">Заказать уборку</a></li>
             </ul>
         </nav>
@@ -45,7 +45,7 @@
 
 <!-- Раздел услуг -->
 
-    <div class="services">
+    <div class="services" id="services">
         <h1>Услуги</h1>
         <div class="services--container">
                 <!-- Карточка 1 -->
@@ -291,7 +291,7 @@
 
 
     <!-- Раздел с работами -->
-     <section class="gallery-section">
+     <section class="gallery-section" id="photo">
         <h1 class="section-title">Результаты выполненных работ</h1>
         
         <div class="gallery-container">
@@ -377,6 +377,39 @@
         </div>
     </section>
 
+
+    <!-- Раздел описания руководителя -->
+<div class="supervisor-container">
+     <div class="supervisor--image-section">
+            <img src="/img/supervisor.png" alt="supervisor" class="supervisor-image">
+        </div>
+        <div class="supervisor-content-section">
+            <p class="label">Руководитель:</p>
+            <h1>Ликунов Евгений Борисович</h1>
+            <div class="supervisor-text-block">
+                <p class="supervisor-hello">Дорогие друзья, приветствую Вас!</p><br>
+                <p>Я верю в честность и открытость в бизнесе, 
+                    поэтому не только контролирую работу сотрудников, 
+                    но и сам выполняю очень сложную и нужную работу, 
+                    от которой многие отказываются. 
+                    В моей компании отсутствуют подводные камни, 
+                    только русские работники с опытом, 
+                    имеются контакты не только подрядчиков в клининге, 
+                    но и в строительстве, ремонте и снабжении.</p>
+            <div class="socials-btn">
+                <p class="label">Контакты для связи: </p>
+                <button class="icon-button">
+                    <img src="/img/wa.svg" alt="WhatsApp">
+                </button>
+               <button class="icon-button">
+                    <img src="/img/tg.svg" alt="Телеграм">
+                </button>
+            </div>
+            </div>
+            
+        </div>
+        
+    </div>
 
 <script>
         document.addEventListener('DOMContentLoaded', function() {

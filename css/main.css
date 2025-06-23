@@ -153,12 +153,12 @@ header nav ul li:last-child a:hover{
 }
 
 /* Раздел услуг */
-.services, .price-section {
+.services, .price-section{
     margin: 50px 40px;
 }
-.services h1, .price-title, .section-title {
+.services h1, .price-title h1, .section-title h1 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .services--container {
@@ -245,6 +245,7 @@ header nav ul li:last-child a:hover{
 /* Раздел с прайс-листом */
 
 .price-columns {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -305,7 +306,7 @@ header nav ul li:last-child a:hover{
 .rec-content-section ul {
     margin-left: 70px;
 }
-.socials-btn, .supervisor-btn  {
+.socials-btn, .supervisor-btn, .social-links  {
     display: flex;
     gap: 10px;
     margin-top: -35px;
@@ -347,6 +348,7 @@ header nav ul li:last-child a:hover{
     overflow: hidden;
 }
 .gallery-track {
+    margin-top: 30px;
     display: flex;
     transition: transform 0.5s ease;
     gap: 20px;
@@ -418,12 +420,11 @@ header nav ul li:last-child a:hover{
 
 /* Раздел описания руководителя */
 .supervisor-container{
-width: 90%;
+    width: 90%;
     display: flex;  
     height: 340px; 
     border-radius: 44px; 
     overflow: hidden;
-    margin: 0 auto
 }
 .supervisor-image {
     border-radius: 16px;
@@ -448,8 +449,125 @@ width: 90%;
     margin-bottom: 20px;
 }
 .supervisor-btn {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 30px;
 }
 
 /* Footer */
+footer {
+    background-color: rgba(175, 208, 235, 0.44);
+    color: #000;
+    padding: 20px 20px;
+    margin-top: 60px;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+.footer-column h3 {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+.footer-column a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.footer-column a:hover {
+    color: #3498db;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+
+address {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.copyright,.info {
+    font-size: 14px;
+    font-weight: 200;
+    color: #838485;
+}
+.developer-link {
+    color: #838485;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.developer-link:hover {
+    color: #3498db;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

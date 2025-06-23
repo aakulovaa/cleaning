@@ -24,7 +24,7 @@
 
 <!-- Описание компании -->
 
-    <div class="container">
+    <div class="container" id="about">
         <div class="image-section">
             <img src="/img/wash.svg" alt="Wash" class="svg-image">
         </div>
@@ -137,13 +137,13 @@
 
 <!-- Раздел с прайс-листом -->
 
-<section class="price-section">
+<section class="price-section" id="price">
         <h2 class="price-title">Прайс-лист</h2>
         
         <div class="price-columns">
             <!-- Первый столбец -->
             <div class="price-column">
-                <div class="price-item">
+                <div class="price-item" id="generalCleaning">
                     <span class="service-name">Генеральная уборка</span>
                     <span class="service-time">5 ч.</span>
                     <span class="service-price">от 15000 ₽</span>
@@ -222,17 +222,17 @@
                     <span class="service-time">1 ч.</span>
                     <span class="service-price">5000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="afterFire">
                     <span class="service-name">Уборка после пожара</span>
                     <span class="service-time">6 ч.</span>
                     <span class="service-price">30000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="afterFlood">
                     <span class="service-name">Уборка после потопа</span>
                     <span class="service-time">6 ч.</span>
                     <span class="service-price">20000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="office">
                     <span class="service-name">Уборка офиса</span>
                     <span class="service-time">1 ч.</span>
                     <span class="service-price">750 ₽</span>
@@ -242,17 +242,17 @@
                     <span class="service-time">6 ч.</span>
                     <span class="service-price">20000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="factory">
                     <span class="service-name">Уборка на заводе</span>
                     <span class="service-time">6 ч.</span>
                     <span class="service-price">250000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="restaurant">
                     <span class="service-name">Уборка в ресторане</span>
                     <span class="service-time">6 ч.</span>
                     <span class="service-price">50000 ₽</span>
                 </div>
-                <div class="price-item">
+                <div class="price-item" id="shop">
                     <span class="service-name">Уборка в магазине</span>
                     <span class="service-time">3 ч.</span>
                     <span class="service-price">20000 ₽</span>
@@ -262,7 +262,7 @@
     </section>
 
 <!-- Раздел с персональной рекомендацией -->
- <div class="rec-container">
+ <div class="rec-container" id="consultation">
         <div class="rec-content-section">
             <h1>Получите персональную консультацию -- подберем для Вас наилучший вариант</h1>
             <p class="agree">Согласуем:</p>
@@ -379,7 +379,7 @@
 
 
     <!-- Раздел описания руководителя -->
-<div class="supervisor-container">
+<div class="supervisor-container" id="supervisorDesc">
      <div class="supervisor--image-section">
             <img src="/img/supervisor.png" alt="supervisor" class="supervisor-image">
         </div>
@@ -414,7 +414,72 @@
 
     <!-- Footer -->
 
+<footer>
+        <div class="footer-content">
+            <!-- Колонка 1: Навигация для физических лиц -->
+            <div class="footer-column">
+                <h3>Физическим лицам</h3>
+                <ul>
+                    <li><a href="#generalCleaning">Генеральная</a></li>
+                    <li><a href="#afterFire">После пожара</a></li>
+                    <li><a href="#afterFlood">После потопа</a></li>
+                </ul>
+            </div>
 
+            <!-- Колонка 2: Навигация для юридических лиц -->
+            <div class="footer-column">
+                <h3>Юридическим лицам</h3>
+                <ul>
+                    <li><a href="#office">Офис</a></li>
+                    <li><a href="#factory">Завод</a></li>
+                    <li><a href="#restaurant">Ресторан</a></li>
+                    <li><a href="#shop">Магазин/ТЦ</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 3: Информация -->
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#price">Прайс-лист</a></li>
+                    <li><a href="#consultation">Консультация</a></li>
+                    <li><a href="#photo">Фото наших работ</a></li>
+                    <li><a href="#supervisorDesc">Связаться с руководителем</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 4: Контакты -->
+            <div class="footer-column" id="contact">
+                <h3>Контакты</h3>
+                <div class="contact-info">
+                    <div class="phone">+7 (123) 456-78-90</div>
+                    <div class="social-links">
+                        <button class="icon-button">
+                            <img src="/img/wa.svg" alt="WhatsApp">
+                        </button>
+                        <button class="icon-button">
+                            <img src="/img/tg.svg" alt="Телеграм">
+                        </button>
+                    </div>
+                    <h3>Адрес</h3>
+                    <address>Город Москва, Северо-Западный административный округ, район Куркино</address>
+                    <h3>Территория обслуживания</h3>
+                    <address>Город Москва и Московская область</address>
+                </div>
+            </div>
+        </div>
+
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">Клининговая компания<br>ИП Ликунов Евгений Борисович</div>
+                <div class="info">ИНН: 132808385886<br>ОГРНИП: 31632600055881</div>
+                <a href="https://t.me/aakulova03" class="developer-link">Разработка сайта</a>
+            </div>
+        </div>
+    </footer>
 
 <script>
         document.addEventListener('DOMContentLoaded', function() {

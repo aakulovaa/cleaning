@@ -126,11 +126,12 @@ header nav ul li:last-child a:hover{
 }
 
 /* Раздел услуг */
-.services {
-    margin: 20px 40px;
+.services, .price-section {
+    margin: 50px 40px;
 }
-.services h1 {
+.services h1, .price-title {
     font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .services--container {
@@ -210,5 +211,57 @@ header nav ul li:last-child a:hover{
 @media (max-width: 600px) {
     .services-card {
         width: 100%;
+    }
+}
+
+
+/* Раздел с прайс-листом */
+
+.price-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.price-column {
+    flex: 1;
+    min-width: 300px;
+}
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    font-weight: 400;
+    flex: 2;
+}
+.service-time {
+    color: #7f8c8d;
+    font-weight: 200;
+    flex: 1;
+    text-align: center;
+}
+
+.service-price {
+    font-weight: 300;
+    flex: 1;
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .price-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .price-column {
+        margin-bottom: 20px;
     }
 }

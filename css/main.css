@@ -149,7 +149,7 @@ header nav ul li:last-child a:hover{
 .services, .price-section {
     margin: 50px 40px;
 }
-.services h1, .price-title {
+.services h1, .price-title, .section-title {
     font-size: 28px;
     margin-bottom: 30px;
 }
@@ -293,6 +293,10 @@ header nav ul li:last-child a:hover{
 .rec-content-section .agree {
     font-size: 18px;
     font-weight: 300;
+    margin-left: 70px;
+}
+.rec-content-section ul {
+    margin-left: 70px;
 }
 .socials-btn {
     display: flex;
@@ -320,4 +324,87 @@ header nav ul li:last-child a:hover{
 .icon-button img {
     width: 40px;
     height: 40px;
+}
+
+
+/* Раздел с работами */
+.gallery-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.gallery-container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gallery-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.gallery-item {
+    min-width: calc(33.333% - 14px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+    border: none;
+    opacity: 0.8;
+}
+.gallery-nav:hover {
+    opacity: 1;
+    background: #f0f0f0;
+}
+
+.gallery-prev {
+    left: 10px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+.gallery-nav svg {
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 900px) {
+    .gallery-item {
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        min-width: 100%;
+    }
 }

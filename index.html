@@ -3,42 +3,529 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Клининговая компания</title>
-    <link rel="stylesheet" href="/css/main.css">
+    
 </head>
 <body>
-    <header class="container">
+
+    <!-- Header -->
+
+    <header class="header-container">
         <span class="logo">Клининговая<br><t>компания</t></span>
         <nav>
             <ul>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Работы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#photo">Работы</a></li>
+                <li><a href="#contact">Контакты</a></li>
                 <li><a href="#" class="btn">Заказать уборку</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="desc container">
-        <div class="div desc--info">
-            <h1>Клининговая компания с опытом 5 лет</h1>
-            <p>
-                <ul>
-                    <li>Работаем по договору</li>
-                    <li>Штат опытных клинеров</li>
-                    <li>Стоимость работ рассчитывается <br>после осмотра объекта</li>
-                </ul>
-            </p>
-            <p>
-                Берем коттеджи под управление с услугами трансфер и встречи гостей,<br>
-                 клининг после выселения.<br>
-                Имеется персонал по уборке придомовой территории (полив, стрижка газонов,
-                <br> высаживание деревьев и кустарников).<br>
-                Промышленный, высотный клининг.
-            </p>
-            <img src="/img/wash.svg" alt="">
+<!-- Описание компании -->
+
+    <div class="container" id="about">
+        <div class="image-section">
+            <img src="img/wash.svg" alt="Wash" class="svg-image">
+        </div>
+        <div class="content-section">
+            <h1>Клининговая компания с опытом <span style="color: #ECD57E;">5 лет</span></h1>
+            <ul>
+                <li>Работаем по договору</li>
+                <li>Штат опытных клинеров</li>
+                <li>Стоимость работ рассчитывается после осмотра объекта</li>
+            </ul>
+            <div class="text-block">
+                <p> Берем коттеджи под управление с услугами трансфер и встречи гостей, клининг после выселения</p>
+                <p>Имеется персонал по уборке придомовой территории (полив, стрижка газонов, высаживание деревьев и кустарников).</p>
+                <p>Промышленный, высотный клининг.</p>
+            </div>
         </div>
     </div>
+
+<!-- Раздел услуг -->
+
+    <div class="services" id="services">
+        <h1>Услуги</h1>
+        <div class="services--container">
+                <!-- Карточка 1 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services1.png" alt="Услуга 1" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Генеральная уборка</div>
+                        <div class="services--clock">5 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">от 15000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+                    <!-- Карточка 2 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services2.png" alt="Услуга 2" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Уборка после пожара</div>
+                        <div class="services--clock">6 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">30000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+                    <!-- Карточка 3 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services3.png" alt="Услуга 3" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Уборка после потопа</div>
+                        <div class="services--clock">6 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">20000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+                    <!-- Карточка 4 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services4.png" alt="Услуга 4" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Уборка после мероприятия</div>
+                        <div class="services--clock">4 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">15000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+                    <!-- Карточка 5 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services5.png" alt="Услуга 5" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Уборка в ресторане</div>
+                        <div class="services--clock">6 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">50000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+                    <!-- Карточка 6 -->
+            <div class="services--card">
+                <div class="services--content">
+                    <img src="img/services6.png" alt="Услуга 6" class="services-image">
+                    <div class="services--info">
+                        <div class="services--name">Уборка на заводе</div>
+                        <div class="services--clock">6 ч.</div>
+                    </div>
+                </div>
+                <div class="services--footer">
+                    <div class="services--price">250000 ₽</div>
+                    <button class="services--button">Подробнее  ></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Раздел с прайс-листом -->
+
+<section class="price-section" id="price">
+        <h2 class="price-title">Прайс-лист</h2>
+        
+        <div class="price-columns">
+            <!-- Первый столбец -->
+            <div class="price-column">
+                <div class="price-item" id="generalCleaning">
+                    <span class="service-name">Генеральная уборка</span>
+                    <span class="service-time">5 ч.</span>
+                    <span class="service-price">от 15000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Уборка кухни</span>
+                    <span class="service-time">5 ч.</span>
+                    <span class="service-price">10000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Уборка ванной</span>
+                    <span class="service-time">2 ч.</span>
+                    <span class="service-price">5000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье санузла</span>
+                    <span class="service-time">2 ч.</span>
+                    <span class="service-price">3000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье люстры</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">5000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье холодильника</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">3000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье духовкиы</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">2000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье вытяжки</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">2000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье плиты</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">2000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье окон</span>
+                    <span class="service-time">3 ч.</span>
+                    <span class="service-price">5000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье балкона</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">900 ₽</span>
+                </div>
+            </div>
+            
+            <!-- Второй столбец -->
+            <div class="price-column">
+                <div class="price-item">
+                    <span class="service-name">Мытье фасада</span>
+                    <span class="service-time">3 ч.</span>
+                    <span class="service-price">10000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Мытье жалюзи</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">3000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Сухой туман</span>
+                    <span class="service-time">2 ч.</span>
+                    <span class="service-price">5000 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Озонирование</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">5000 ₽</span>
+                </div>
+                <div class="price-item" id="afterFire">
+                    <span class="service-name">Уборка после пожара</span>
+                    <span class="service-time">6 ч.</span>
+                    <span class="service-price">30000 ₽</span>
+                </div>
+                <div class="price-item" id="afterFlood">
+                    <span class="service-name">Уборка после потопа</span>
+                    <span class="service-time">6 ч.</span>
+                    <span class="service-price">20000 ₽</span>
+                </div>
+                <div class="price-item" id="office">
+                    <span class="service-name">Уборка офиса</span>
+                    <span class="service-time">1 ч.</span>
+                    <span class="service-price">750 ₽</span>
+                </div>
+                <div class="price-item">
+                    <span class="service-name">Уборка подъезда</span>
+                    <span class="service-time">6 ч.</span>
+                    <span class="service-price">20000 ₽</span>
+                </div>
+                <div class="price-item" id="factory">
+                    <span class="service-name">Уборка на заводе</span>
+                    <span class="service-time">6 ч.</span>
+                    <span class="service-price">250000 ₽</span>
+                </div>
+                <div class="price-item" id="restaurant">
+                    <span class="service-name">Уборка в ресторане</span>
+                    <span class="service-time">6 ч.</span>
+                    <span class="service-price">50000 ₽</span>
+                </div>
+                <div class="price-item" id="shop">
+                    <span class="service-name">Уборка в магазине</span>
+                    <span class="service-time">3 ч.</span>
+                    <span class="service-price">20000 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Раздел с персональной рекомендацией -->
+ <div class="rec-container" id="consultation">
+        <div class="rec-content-section">
+            <h1>Получите персональную консультацию -- подберем для Вас наилучший вариант</h1>
+            <p class="agree">Согласуем:</p>
+            <ul>
+                <li>Объем работ</li>
+                <li>Сложность</li>
+                <li>Временные рамки</li>
+            </ul>
+            <div class="rec-text-block">
+                <p> Стоимость работ рассчитывается после осмотра объекта</p>
+            <div class="socials-btn">
+                <button class="icon-button">
+                    <img src="img/wa.svg" alt="WhatsApp">
+                </button>
+               <button class="icon-button">
+                    <img src="img/tg.svg" alt="Телеграм">
+                </button>
+            </div>
+            </div>
+            
+        </div>
+         <div class="rec-image-section">
+            <img src="img/cleener.png" alt="Wash" class="png-image">
+        </div>
+    </div>
+
+
+    <!-- Раздел с работами -->
+     <section class="gallery-section" id="photo">
+        <h1 class="section-title">Результаты выполненных работ</h1>
+        
+        <div class="gallery-container">
+            <button class="gallery-nav gallery-prev">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                </svg>
+            </button>
+            
+            <div class="gallery-track">
+                <!-- Фото 1-3 -->
+                <div class="gallery-item">
+                    <img src="img/photo1.jpg" alt="Пример работы 1" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo2.jpeg" alt="Пример работы 2" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo3.jpeg" alt="Пример работы 3" class="gallery-image">
+                </div>
+                
+                <!-- Фото 4-6 -->
+                <div class="gallery-item">
+                    <img src="img/photo4.jpeg" alt="Пример работы 4" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo5.jpeg" alt="Пример работы 5" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo6.jpeg" alt="Пример работы 6" class="gallery-image">
+                </div>
+                
+                <!-- Фото 7-9 -->
+                <div class="gallery-item">
+                    <img src="img/photo7.jpeg" alt="Пример работы 7" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo8.jpeg" alt="Пример работы 8" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo9.jpeg" alt="Пример работы 9" class="gallery-image">
+                </div>
+                
+                <!-- Фото 10-12 -->
+                <div class="gallery-item">
+                    <img src="img/photo10.jpeg" alt="Пример работы 10" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo11.jpeg" alt="Пример работы 11" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo12.jpeg" alt="Пример работы 12" class="gallery-image">
+                </div>
+                
+                <!-- Фото 13-15 -->
+                <div class="gallery-item">
+                    <img src="img/photo13.jpeg" alt="Пример работы 13" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo14.jpeg" alt="Пример работы 14" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo15.jpeg" alt="Пример работы 15" class="gallery-image">
+                </div>
+
+                 <!-- Фото 16-18 -->
+                <div class="gallery-item">
+                    <img src="img/photo16.jpeg" alt="Пример работы 16" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo17.jpeg" alt="Пример работы 17" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/photo18.jpeg" alt="Пример работы 18" class="gallery-image">
+                </div>
+            </div>
+            
+            <button class="gallery-nav gallery-next">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Раздел описания руководителя -->
+<div class="supervisor-container" id="supervisorDesc">
+     <div class="supervisor--image-section">
+            <img src="img/supervisor.png" alt="supervisor" class="supervisor-image">
+        </div>
+        <div class="supervisor-content-section">
+            <p class="label">Руководитель:</p>
+            <h1>Ликунов Евгений Борисович</h1>
+            <div class="supervisor-text-block">
+                <p class="supervisor-hello">Дорогие друзья, приветствую Вас!</p><br>
+                <p>Я верю в честность и открытость в бизнесе, 
+                    поэтому не только контролирую работу сотрудников, 
+                    но и сам выполняю очень сложную и нужную работу, 
+                    от которой многие отказываются. 
+                    В моей компании отсутствуют подводные камни, 
+                    только русские работники с опытом, 
+                    имеются контакты не только подрядчиков в клининге, 
+                    но и в строительстве, ремонте и снабжении.</p>
+            <div class="supervisor-btn">
+                <p class="label">Контакты для связи: </p>
+                <button class="icon-button">
+                    <img src="img/wa.svg" alt="WhatsApp">
+                </button>
+               <button class="icon-button">
+                    <img src="img/tg.svg" alt="Телеграм">
+                </button>
+            </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <!-- Footer -->
+
+<footer>
+        <div class="footer-content">
+            <!-- Колонка 1: Навигация для физических лиц -->
+            <div class="footer-column">
+                <h3>Физическим лицам</h3>
+                <ul>
+                    <li><a href="#generalCleaning">Генеральная</a></li>
+                    <li><a href="#afterFire">После пожара</a></li>
+                    <li><a href="#afterFlood">После потопа</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 2: Навигация для юридических лиц -->
+            <div class="footer-column">
+                <h3>Юридическим лицам</h3>
+                <ul>
+                    <li><a href="#office">Офис</a></li>
+                    <li><a href="#factory">Завод</a></li>
+                    <li><a href="#restaurant">Ресторан</a></li>
+                    <li><a href="#shop">Магазин/ТЦ</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 3: Информация -->
+            <div class="footer-column">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#price">Прайс-лист</a></li>
+                    <li><a href="#consultation">Консультация</a></li>
+                    <li><a href="#photo">Фото наших работ</a></li>
+                    <li><a href="#supervisorDesc">Связаться с руководителем</a></li>
+                </ul>
+            </div>
+
+            <!-- Колонка 4: Контакты -->
+            <div class="footer-column" id="contact">
+                <h3>Контакты</h3>
+                <div class="contact-info">
+                    <div class="phone">+7 (123) 456-78-90</div>
+                    <div class="social-links">
+                        <button class="icon-button">
+                            <img src="img/wa.svg" alt="WhatsApp">
+                        </button>
+                        <button class="icon-button">
+                            <img src="img/tg.svg" alt="Телеграм">
+                        </button>
+                    </div>
+                    <h3>Адрес</h3>
+                    <address>Город Москва, Северо-Западный административный округ, район Куркино</address>
+                    <h3>Территория обслуживания</h3>
+                    <address>Город Москва и Московская область</address>
+                </div>
+            </div>
+        </div>
+
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">Клининговая компания<br>ИП Ликунов Евгений Борисович</div>
+                <div class="info">ИНН: 132808385886<br>ОГРНИП: 31632600055881</div>
+                <a href="https://t.me/aakulova03" class="developer-link">Разработка сайта</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.gallery-track');
+            const items = document.querySelectorAll('.gallery-item');
+            const prevBtn = document.querySelector('.gallery-prev');
+            const nextBtn = document.querySelector('.gallery-next');
+            
+            let currentPosition = 0;
+            const itemWidth = items[0].offsetWidth + 20; // Ширина элемента + gap
+            const visibleItems = 3;
+            const totalItems = items.length;
+            
+            function updateGallery() {
+                track.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
+                
+                // Скрываем/показываем кнопки в зависимости от позиции
+                prevBtn.style.display = currentPosition === 0 ? 'none' : 'flex';
+                nextBtn.style.display = currentPosition >= totalItems - visibleItems ? 'none' : 'flex';
+            }
+            
+            nextBtn.addEventListener('click', function() {
+                if (currentPosition < totalItems - visibleItems) {
+                    currentPosition++;
+                    updateGallery();
+                }
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateGallery();
+                }
+            });
+            
+            // Инициализация
+            updateGallery();
+            
+            // Адаптация при изменении размера окна
+            window.addEventListener('resize', function() {
+                itemWidth = items[0].offsetWidth + 20;
+                updateGallery();
+            });
+        });
+    </script>
 
 </body>
 </html>
